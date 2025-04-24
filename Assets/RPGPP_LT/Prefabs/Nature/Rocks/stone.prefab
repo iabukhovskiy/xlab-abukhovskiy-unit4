@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 23309717094965422}
   - component: {fileID: 3646796531853450039}
   - component: {fileID: -7416642251047739602}
+  - component: {fileID: 2678048215069053224}
+  - component: {fileID: 6728520636327122880}
   m_Layer: 0
   m_Name: stone
   m_TagString: Untagged
@@ -113,6 +115,41 @@ Rigidbody:
   m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!114 &-7416642251047739602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290125285081394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68d4653e7fcc3d64285c9d541f94d8b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isAffect: 0
+--- !u!64 &2678048215069053224
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290125285081394}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: d1fd41beb70267947bc1c996df07593d, type: 3}
+--- !u!114 &6728520636327122880
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
