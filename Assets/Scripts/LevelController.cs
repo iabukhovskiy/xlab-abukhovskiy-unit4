@@ -9,7 +9,7 @@ namespace Golf
         public SpawnerStone spawner;
         private float m_delay = 0.5f;
         public float delayMax = 2f;
-        public float delayMin = 0f;
+        public float delayMin = 0.3f;
         public float delayStep = 0.1f;
         private float m_lastSpawnedTime;
         public int score = 0;
@@ -19,6 +19,7 @@ namespace Golf
         {
             m_lastSpawnedTime = Time.time;
             RefreshDelay();
+            ClearStones();
         }
         private void OnStickHit()
         {

@@ -18,6 +18,8 @@ namespace Golf
             levelController.enabled = true;
             playerController.enabled = true;
 
+            levelController.ClearStones();
+            
             GameEvents.onCollisionStone += OnGameOver;
             GameEvents.onStickHit += OnStickHit;
             //OnStickHit();

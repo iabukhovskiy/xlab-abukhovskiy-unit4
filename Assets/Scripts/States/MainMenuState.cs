@@ -16,6 +16,7 @@ namespace Golf
         public void PlayGame()
         {
             Exit();
+            levelController.ClearStones();
             gamePlayState.Enter();
         }
         protected override void OnEnable()
