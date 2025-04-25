@@ -1,17 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
+using TMPro;
 using UnityEngine.UI;
+
 
 namespace Golf
 {
     public class MainMenuState : GameState
     {
+        // public List<GameObject> views;
         public GameState gamePlayState;
+        public LevelController levelController;
         public TMP_Text scoreText;
-        public LevelContr LevelContr;
-
         public void PlayGame()
         {
             Exit();
@@ -20,8 +21,15 @@ namespace Golf
         protected override void OnEnable()
         {
             base.OnEnable();
-
-            scoreText.text = $" HScore : {LevelContr.hightScore}";
+            scoreText.text = $" HScore : {levelController.highScore}";
         }
+
+        // private void OnDisable()
+        // {
+        //     foreach (var items in views)
+        //     {
+        //         items.SetActive(false);
+        //     }
+        // }
     }
 }

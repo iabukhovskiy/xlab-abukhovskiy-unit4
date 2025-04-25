@@ -7,19 +7,18 @@ namespace Golf
 {
     public static class GameEvents
     {
-        public static event System.Action onCollisionStones;
+        public static event System.Action onCollisionStone;
         public static event System.Action onStickHit;
 
 
         public static void CollisonStonesInvoke(Collision collision)
         { 
-            onCollisionStones?.Invoke();
+            onCollisionStone?.Invoke();
         }
 
         public static void StickHit()
         {
             onStickHit?.Invoke();
         }
-
     }
 }
